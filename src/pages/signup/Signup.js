@@ -1,7 +1,7 @@
 // styles & images
 import { useState } from "react";
 import "./Signup.css";
-import DefaultPicture from "../../assets/defaultpf.png";
+//import DefaultPicture from "../../assets/defaultpf.png";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
