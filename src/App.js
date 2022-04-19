@@ -29,7 +29,7 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/Signup">
+            <Route path="/signup">
               <Signup />
             </Route>
           </Switch>
