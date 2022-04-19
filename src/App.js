@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // styles
@@ -10,11 +9,13 @@ import Create from "./pages/create/Create";
 import Login from "./pages/login/Login";
 import Project from "./pages/project/Project";
 import Signup from "./pages/signup/Signup";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <div className="container">
           <Switch>
             <Route exact path="/">
