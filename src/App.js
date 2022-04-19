@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <div className="container">
+          <Navbar />
           <Switch>
             <Route exact path="/">
               <Dashboard />
