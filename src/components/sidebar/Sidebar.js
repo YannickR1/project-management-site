@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 // styles & images
 import "./Sidebar.css";
-import DashboardIcon from "../../assets/dasboard_icon.svg";
+import DashboardIcon from "../../assets/dashboard_icon.svg";
 import AddIcon from "../../assets/add_icon.svg";
 
 export default function Sidebar() {
