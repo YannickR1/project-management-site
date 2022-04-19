@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 // styles & images
 import "./Navbar.css";
-import Temple from "../../assets/temple.svg";
+import Igloo from "../../assets/igloo.png";
 
 export default function Navbar() {
   return (
     <div className="navbar">
       <ul>
         <li className="logo">
-          <img src={Temple} alt="igloo logo" />
+          <img src={Igloo} alt="igloo logo" />
           <span>The Igloo</span>
         </li>
 
