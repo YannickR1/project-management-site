@@ -1,7 +1,7 @@
 import { useSignup } from "../../hooks/useSignup";
+import { useState } from "react";
 
 // styles & images
-import { useState } from "react";
 import "./Signup.css";
 //import DefaultPicture from "../../assets/defaultpf.png";
 
