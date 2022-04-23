@@ -30,24 +30,24 @@ function App() {
             <Navbar />
             <Switch>
               <Route exact path="/">
-                {user && <Dashboard />}
                 {!user && <Redirect to="/login" />}
+                {user && <Dashboard />}
               </Route>
               <Route path="/create">
-                {user && <Create />}
                 {!user && <Redirect to="/login" />}
+                {user && <Create />}
               </Route>
               <Route path="/project/:id">
-                {user && <Project />}
                 {!user && <Redirect to="/login" />}
+                {user && <Project />}
               </Route>
               <Route path="/login">
-                {!user && <Login />}
                 {user && <Redirect to="/" />}
+                {!user && <Login />}
               </Route>
               <Route path="/signup">
-                {!user && <Signup />}
                 {user && <Redirect to="/" />}
+                {!user && <Signup />}
               </Route>
             </Switch>
           </div>
