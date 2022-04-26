@@ -53,7 +53,7 @@ export default function Create() {
 
       displayName: user.displayName,
       photoURL: user.photoURL,
-      id: user.id
+      id: user.uid
 
     }
 
@@ -75,7 +75,7 @@ export default function Create() {
       assignedUsersList      
     }
 
-    
+    console.log(project)
   };
 
   return (
