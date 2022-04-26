@@ -62,12 +62,12 @@ export default function Create() {
         </label>
         <label>
           <span>Due date:</span>
-          <textarea
+          <input
             required
             type="date"
             onChange={(e) => setDueDate(e.target.value)}
             value={dueDate}>
-          </textarea>
+          </input>
         </label>
         <label>
           <span>Project category:</span>
