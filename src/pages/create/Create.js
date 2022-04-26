@@ -17,10 +17,10 @@ const categories = [
 ];
 
 export default function Create() {
-  const { documents, response } = useCollection("users");
+  const { documents } = useCollection("users");
   const [users, setUsers] = useState([]);
   const { user } = useAuthContext();
-  const { addDocument } = useFirestore('projects');
+  const { addDocument, response } = useFirestore('projects');
   const { history } = useHistory();
 
   // form field values
