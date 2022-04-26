@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Select from 'react-select'
 // styles
 import './Create.css'
 
@@ -55,7 +55,6 @@ export default function Create() {
           <span>Assign to:</span>
         </label>
         <button className='btn'>Add Project</button>
-
       </form>
     </div>
   )
