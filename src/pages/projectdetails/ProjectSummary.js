@@ -6,9 +6,9 @@ import { useHistory } from 'react-router-dom'
 export default function ProjectSummary({ project }) {
   const { deleteDocument } = useFirestore('projects')
   const { user } = useAuthContext()
-  const { history } = useHistory()
+  const history = useHistory()
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     deleteDocument(project.id)
     history.push('/')
   }
@@ -33,7 +33,7 @@ export default function ProjectSummary({ project }) {
 
       </div>
       {user.uid === project.createdBy.id && (
-        <button className="btn" onClick={() => handleClick}>Mark as Complete</button>
+        <button className="btn" onClick={() => handleClick()}>Mark as Complete</button>
       )}
     </div>
   );

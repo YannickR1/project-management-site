@@ -34,7 +34,7 @@ export default function ProjectComments({ project }) {
       <h4>Project Comments</h4>
 
       <ul>
-        {project.comments.length > 0 && project.map((comment) => (
+        {project.comments.length > 0 && project.comments.map((comment) => (
           <li key={comment.id}>
             <div className="comment-author">
               <Avatar src={comment.photoURL} />
@@ -56,6 +56,7 @@ export default function ProjectComments({ project }) {
           <textarea
             required
             onChange={(e) => setNewComment(e.target.value)}
+            value= {newComment}
           ></textarea>
         </label>
         <button className="btn">Add comment</button>
